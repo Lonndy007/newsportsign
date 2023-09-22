@@ -44,7 +44,7 @@ Post
                <td>{{new.preview }}</td>
                <td>
                    {% for category in new.category.all %}
-                   <a href="{% category_list category.id %}">{{category}}</a>
+                   <a href="{% url 'category_list' category.id %}">{{category}}</a>
                    {% endfor %}
                </td>
 
